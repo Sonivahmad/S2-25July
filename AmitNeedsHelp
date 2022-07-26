@@ -1,0 +1,9 @@
+function order(menu){
+for(let i=0;i<menu.length;i++){
+  if(menu[i].includes('Paneer') && !menu[i].includes('Rice')){
+    return menu[i]
+  }
+}
+}
+console.log(order(['Panner Butter Masala', 'Panner Fried Rice', 'Chicken Biryani', 'Cold Coffee']))
+exports.order = order
